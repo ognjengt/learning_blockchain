@@ -1,2 +1,2 @@
 # learning_blockchain
-Materials for learning Solidity and Blockchain development.
+Materials and different project implementations for learning Solidity and Blockchain development.

@@ -2,5 +2,5 @@
 Materials and different project implementations for learning Solidity and Blockchain development.
 
 Run
-`$ truffle migrate reset`
+`$ truffle migrate --reset`
 to reset migrations

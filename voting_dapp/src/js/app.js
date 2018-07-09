@@ -79,7 +79,7 @@ App = {
           candidatesSelect.append(candidateOption);
         });
       }
-      //return electionInstance.voters(App.account);
+      return electionInstance.voters(App.account);
     }).then(function(hasVoted) {
       // Do not allow a user to vote
       if(hasVoted) {
@@ -110,8 +110,7 @@ App = {
     var candidateId = $('#candidatesSelect').val();
     App.contracts.Election.deployed().then(function(instance) {
       return instance.vote(candidateId, {
-        from: App.account,
-        gas: 500000 // Gas limit
+        from: App.account
       });
     }).then(function(result) {
       // Wait for votes to update
